@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "8cb71915-21be-4c11-9f28-75d94e0810da",
+		"name": "lab post-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33903124"
+	},
+	"item": [
+		{
+			"name": "post",
+			"item": [
+				{
+					"name": "1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"title\": \"The Godfather\",\r\n    \"text\": \"The Godfather is a 1972 American crime film directed by Francis Ford Coppola and produced by Albert S. Ruddy, based on Mario Puzo's best-selling novel of the same name.\",\r\n    \"author\": \"Mario Puzo\"\r\n  },\r\n  {\r\n    \"title\": \"Pulp Fiction\",\r\n    \"text\": \"Pulp Fiction is a 1994 American neo-noir black comedy crime film written and directed by Quentin Tarantino.\",\r\n    \"author\": \"Quentin Tarantino\"\r\n  },\r\n  {\r\n    \"title\": \"Citizen Kane\",\r\n    \"text\": \"Citizen Kane is a 1941 American drama film produced and directed by Orson Welles, who also co-wrote the screenplay with Herman J. Mankiewicz.\",\r\n    \"author\": \"Orson Welles\"\r\n  },\r\n  {\r\n    \"title\": \"The Shawshank Redemption\",\r\n    \"text\": \"The Shawshank Redemption is a 1994 American drama film written and directed by Frank Darabont, based on the 1982 Stephen King novella Rita Hayworth and Shawshank Redemption.\",\r\n    \"author\": \"Frank Darabont\"\r\n  },\r\n  {\r\n    \"title\": \"Inception\",\r\n    \"text\": \"Inception is a 2010 science fiction action film written and directed by Christopher Nolan, who also produced the film with Emma Thomas, his wife.\",\r\n    \"author\": \"Christopher Nolan\"\r\n  }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/posts/661715a6c30e85d94c7ee60c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"posts",
+								"661715a6c30e85d94c7ee60c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"title\": \"Ficción Pulpa\",\r\n    \"text\": \"Pulp Fiction is a 1994 American neo-noir black comedy crime film written and directed by Julio, Carlos and Cristián.\",\r\n    \"author\": \"Julio, Carlos y Cristián\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/posts/661715a6c30e85d94c7ee60d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"posts",
+								"661715a6c30e85d94c7ee60d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "5",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/posts/661715a6c30e85d94c7ee610",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"posts",
+								"661715a6c30e85d94c7ee610"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
