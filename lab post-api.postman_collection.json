@@ -64,7 +64,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/posts/661715a6c30e85d94c7ee60c",
+							"raw": "http://localhost:8000/api/posts/66197905113e42ee78971ea4",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -73,7 +73,7 @@
 							"path": [
 								"api",
 								"posts",
-								"661715a6c30e85d94c7ee60c"
+								"66197905113e42ee78971ea4"
 							]
 						}
 					},
@@ -94,7 +94,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/posts/661715a6c30e85d94c7ee60d",
+							"raw": "http://localhost:8000/api/posts/66197905113e42ee78971ea4",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -103,7 +103,7 @@
 							"path": [
 								"api",
 								"posts",
-								"661715a6c30e85d94c7ee60d"
+								"66197905113e42ee78971ea4"
 							]
 						}
 					},
@@ -115,7 +115,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/posts/661715a6c30e85d94c7ee610",
+							"raw": "http://localhost:8000/api/posts/66197905113e42ee78971ea7",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -124,7 +124,70 @@
 							"path": [
 								"api",
 								"posts",
-								"661715a6c30e85d94c7ee610"
+								"66197905113e42ee78971ea7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"name\": \"Usuario 1\",\r\n    \"email\": \"usuario1@example.com\",\r\n    \"password\": \"12345678\",\r\n    \"biography\": \"Biografía del Usuario 1\"\r\n  },\r\n  {\r\n    \"name\": \"Usuario 2\",\r\n    \"email\": \"usuario2@example.com\",\r\n    \"password\": \"12345678\",\r\n    \"biography\": \"Biografía del Usuario 2\",\r\n    \"active\": true\r\n  },\r\n  {\r\n    \"name\": \"Usuario 3\",\r\n    \"email\": \"usuario3@example.com\",\r\n    \"password\": \"12345678\",\r\n    \"biography\": \"Biografía del Usuario 3\"\r\n  },\r\n  {\r\n    \"name\": \"Usuario 4\",\r\n    \"email\": \"usuario4@example.com\",\r\n    \"password\": \"12345678\",\r\n    \"biography\": \"Biografía del Usuario 4\"\r\n  },\r\n  {\r\n    \"name\": \"Usuario 5\",\r\n    \"email\": \"usuario5@example.com\",\r\n    \"password\": \"12345678\",\r\n    \"biography\": \"Biografía del Usuario 5\"\r\n  }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"usuario2@example.com\",\r\n  \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
 							]
 						}
 					},
